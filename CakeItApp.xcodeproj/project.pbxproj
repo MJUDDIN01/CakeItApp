@@ -34,10 +34,18 @@
 		9F238EB927DF734E00639369 /* CakeDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EB827DF734E00639369 /* CakeDetailsViewModelTests.swift */; };
 		9F238EBB27DF73F700639369 /* CakeSuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F238EBA27DF73F700639369 /* CakeSuccessResponse.json */; };
 		9F238EBD27DF746A00639369 /* CakeFailureResponse.json in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EBC27DF746A00639369 /* CakeFailureResponse.json */; };
+		9F238EC527DF778700639369 /* CakeItAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EC427DF778700639369 /* CakeItAppUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9F238EAE27DF70DC00639369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F238E5327DF51EF00639369 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F238E5A27DF51EF00639369;
+			remoteInfo = CakeItApp;
+		};
+		9F238EC827DF778700639369 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9F238E5327DF51EF00639369 /* Project object */;
 			proxyType = 1;
@@ -77,6 +85,8 @@
 		9F238EB827DF734E00639369 /* CakeDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		9F238EBA27DF73F700639369 /* CakeSuccessResponse.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = CakeSuccessResponse.json; sourceTree = "<group>"; };
 		9F238EBC27DF746A00639369 /* CakeFailureResponse.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = CakeFailureResponse.json; sourceTree = "<group>"; };
+		9F238EC227DF778700639369 /* CakeItAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeItAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F238EC427DF778700639369 /* CakeItAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeItAppUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F238EBF27DF778700639369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,6 +119,7 @@
 			children = (
 				9F238E5D27DF51EF00639369 /* CakeItApp */,
 				9F238EAB27DF70DC00639369 /* CakeItAppTests */,
+				9F238EC327DF778700639369 /* CakeItAppUITests */,
 				9F238E5C27DF51EF00639369 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +129,7 @@
 			children = (
 				9F238E5B27DF51EF00639369 /* CakeItApp.app */,
 				9F238EAA27DF70DC00639369 /* CakeItAppTests.xctest */,
+				9F238EC227DF778700639369 /* CakeItAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,8 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				9F238E9F27DF6A8300639369 /* Coordinator */,
-				9F238E9927DF689400639369 /* ViewModel */,
 				9F238E7827DF5B8F00639369 /* Model */,
+				9F238E9927DF689400639369 /* ViewModel */,
 				9F238E7B27DF5CF000639369 /* View */,
 				9F238E8427DF5FB300639369 /* Networking */,
 				9F238E8127DF5E1300639369 /* Uitility */,
@@ -205,6 +224,14 @@
 			path = CakeItAppTests;
 			sourceTree = "<group>";
 		};
+		9F238EC327DF778700639369 /* CakeItAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F238EC427DF778700639369 /* CakeItAppUITests.swift */,
+			);
+			path = CakeItAppUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,6 +270,24 @@
 			productReference = 9F238EAA27DF70DC00639369 /* CakeItAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9F238EC127DF778700639369 /* CakeItAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F238ECC27DF778700639369 /* Build configuration list for PBXNativeTarget "CakeItAppUITests" */;
+			buildPhases = (
+				9F238EBE27DF778700639369 /* Sources */,
+				9F238EBF27DF778700639369 /* Frameworks */,
+				9F238EC027DF778700639369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F238EC927DF778700639369 /* PBXTargetDependency */,
+			);
+			name = CakeItAppUITests;
+			productName = CakeItAppUITests;
+			productReference = 9F238EC227DF778700639369 /* CakeItAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -257,6 +302,10 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					9F238EA927DF70DC00639369 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9F238E5A27DF51EF00639369;
+					};
+					9F238EC127DF778700639369 = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 9F238E5A27DF51EF00639369;
 					};
@@ -277,6 +326,7 @@
 			targets = (
 				9F238E5A27DF51EF00639369 /* CakeItApp */,
 				9F238EA927DF70DC00639369 /* CakeItAppTests */,
+				9F238EC127DF778700639369 /* CakeItAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,6 +347,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F238EBB27DF73F700639369 /* CakeSuccessResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F238EC027DF778700639369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +397,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F238EBE27DF778700639369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F238EC527DF778700639369 /* CakeItAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -347,6 +412,11 @@
 			isa = PBXTargetDependency;
 			target = 9F238E5A27DF51EF00639369 /* CakeItApp */;
 			targetProxy = 9F238EAE27DF70DC00639369 /* PBXContainerItemProxy */;
+		};
+		9F238EC927DF778700639369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F238E5A27DF51EF00639369 /* CakeItApp */;
+			targetProxy = 9F238EC827DF778700639369 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -574,6 +644,38 @@
 			};
 			name = Release;
 		};
+		9F238ECA27DF778700639369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = foundationProject.CakeItAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CakeItApp;
+			};
+			name = Debug;
+		};
+		9F238ECB27DF778700639369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = foundationProject.CakeItAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CakeItApp;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -600,6 +702,15 @@
 			buildConfigurations = (
 				9F238EB027DF70DC00639369 /* Debug */,
 				9F238EB127DF70DC00639369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F238ECC27DF778700639369 /* Build configuration list for PBXNativeTarget "CakeItAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F238ECA27DF778700639369 /* Debug */,
+				9F238ECB27DF778700639369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
