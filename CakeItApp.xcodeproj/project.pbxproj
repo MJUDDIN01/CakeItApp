@@ -29,7 +29,22 @@
 		9F238EA127DF6AA600639369 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EA027DF6AA600639369 /* MainCoordinator.swift */; };
 		9F238EA327DF6BAF00639369 /* CakeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EA227DF6BAF00639369 /* CakeDetailsViewController.swift */; };
 		9F238EA527DF6C0D00639369 /* CakeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EA427DF6C0D00639369 /* CakeDetailsViewModel.swift */; };
+		9F238EB427DF717200639369 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EB327DF717200639369 /* MockService.swift */; };
+		9F238EB627DF721D00639369 /* CakeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EB527DF721D00639369 /* CakeViewModelTest.swift */; };
+		9F238EB927DF734E00639369 /* CakeDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EB827DF734E00639369 /* CakeDetailsViewModelTests.swift */; };
+		9F238EBB27DF73F700639369 /* CakeSuccessResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F238EBA27DF73F700639369 /* CakeSuccessResponse.json */; };
+		9F238EBD27DF746A00639369 /* CakeFailureResponse.json in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EBC27DF746A00639369 /* CakeFailureResponse.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F238EAE27DF70DC00639369 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F238E5327DF51EF00639369 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F238E5A27DF51EF00639369;
+			remoteInfo = CakeItApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9F238E5B27DF51EF00639369 /* CakeItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,10 +71,23 @@
 		9F238EA027DF6AA600639369 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		9F238EA227DF6BAF00639369 /* CakeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailsViewController.swift; sourceTree = "<group>"; };
 		9F238EA427DF6C0D00639369 /* CakeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailsViewModel.swift; sourceTree = "<group>"; };
+		9F238EAA27DF70DC00639369 /* CakeItAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeItAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F238EB327DF717200639369 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		9F238EB527DF721D00639369 /* CakeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeViewModelTest.swift; sourceTree = "<group>"; };
+		9F238EB827DF734E00639369 /* CakeDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		9F238EBA27DF73F700639369 /* CakeSuccessResponse.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = CakeSuccessResponse.json; sourceTree = "<group>"; };
+		9F238EBC27DF746A00639369 /* CakeFailureResponse.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = CakeFailureResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9F238E5827DF51EF00639369 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F238EA727DF70DC00639369 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				9F238E5D27DF51EF00639369 /* CakeItApp */,
+				9F238EAB27DF70DC00639369 /* CakeItAppTests */,
 				9F238E5C27DF51EF00639369 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				9F238E5B27DF51EF00639369 /* CakeItApp.app */,
+				9F238EAA27DF70DC00639369 /* CakeItAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +193,18 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		9F238EAB27DF70DC00639369 /* CakeItAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F238EBA27DF73F700639369 /* CakeSuccessResponse.json */,
+				9F238EBC27DF746A00639369 /* CakeFailureResponse.json */,
+				9F238EB327DF717200639369 /* MockService.swift */,
+				9F238EB527DF721D00639369 /* CakeViewModelTest.swift */,
+				9F238EB827DF734E00639369 /* CakeDetailsViewModelTests.swift */,
+			);
+			path = CakeItAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,6 +225,24 @@
 			productReference = 9F238E5B27DF51EF00639369 /* CakeItApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9F238EA927DF70DC00639369 /* CakeItAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F238EB227DF70DC00639369 /* Build configuration list for PBXNativeTarget "CakeItAppTests" */;
+			buildPhases = (
+				9F238EA627DF70DC00639369 /* Sources */,
+				9F238EA727DF70DC00639369 /* Frameworks */,
+				9F238EA827DF70DC00639369 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F238EAF27DF70DC00639369 /* PBXTargetDependency */,
+			);
+			name = CakeItAppTests;
+			productName = CakeItAppTests;
+			productReference = 9F238EAA27DF70DC00639369 /* CakeItAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,6 +255,10 @@
 				TargetAttributes = {
 					9F238E5A27DF51EF00639369 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					9F238EA927DF70DC00639369 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9F238E5A27DF51EF00639369;
 					};
 				};
 			};
@@ -212,6 +276,7 @@
 			projectRoot = "";
 			targets = (
 				9F238E5A27DF51EF00639369 /* CakeItApp */,
+				9F238EA927DF70DC00639369 /* CakeItAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +289,14 @@
 				9F238E6B27DF51F000639369 /* LaunchScreen.storyboard in Resources */,
 				9F238E6827DF51F000639369 /* Assets.xcassets in Resources */,
 				9F238E6627DF51EF00639369 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F238EA827DF70DC00639369 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F238EBB27DF73F700639369 /* CakeSuccessResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +329,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F238EA627DF70DC00639369 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F238EB627DF721D00639369 /* CakeViewModelTest.swift in Sources */,
+				9F238EB927DF734E00639369 /* CakeDetailsViewModelTests.swift in Sources */,
+				9F238EB427DF717200639369 /* MockService.swift in Sources */,
+				9F238EBD27DF746A00639369 /* CakeFailureResponse.json in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F238EAF27DF70DC00639369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F238E5A27DF51EF00639369 /* CakeItApp */;
+			targetProxy = 9F238EAE27DF70DC00639369 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9F238E6427DF51EF00639369 /* Main.storyboard */ = {
@@ -448,6 +540,40 @@
 			};
 			name = Release;
 		};
+		9F238EB027DF70DC00639369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = foundationProject.CakeItAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeItApp.app/CakeItApp";
+			};
+			name = Debug;
+		};
+		9F238EB127DF70DC00639369 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = foundationProject.CakeItAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeItApp.app/CakeItApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -465,6 +591,15 @@
 			buildConfigurations = (
 				9F238E7027DF51F000639369 /* Debug */,
 				9F238E7127DF51F000639369 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F238EB227DF70DC00639369 /* Build configuration list for PBXNativeTarget "CakeItAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F238EB027DF70DC00639369 /* Debug */,
+				9F238EB127DF70DC00639369 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
