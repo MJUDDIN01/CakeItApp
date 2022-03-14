@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9F238E5F27DF51EF00639369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E5E27DF51EF00639369 /* AppDelegate.swift */; };
 		9F238E6127DF51EF00639369 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E6027DF51EF00639369 /* SceneDelegate.swift */; };
-		9F238E6327DF51EF00639369 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E6227DF51EF00639369 /* ViewController.swift */; };
 		9F238E6627DF51EF00639369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F238E6427DF51EF00639369 /* Main.storyboard */; };
 		9F238E6827DF51F000639369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F238E6727DF51F000639369 /* Assets.xcassets */; };
 		9F238E6B27DF51F000639369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F238E6927DF51F000639369 /* LaunchScreen.storyboard */; };
@@ -20,13 +19,22 @@
 		9F238E8A27DF605D00639369 /* JsonDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E8927DF605D00639369 /* JsonDecodable.swift */; };
 		9F238E8C27DF608800639369 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E8B27DF608800639369 /* ServiceError.swift */; };
 		9F238E8E27DF60BD00639369 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E8D27DF60BD00639369 /* ServiceClient.swift */; };
+		9F238E9027DF66D400639369 /* ServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E8F27DF66D400639369 /* ServiceImpl.swift */; };
+		9F238E9227DF676900639369 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E9127DF676900639369 /* URLRequest+Extension.swift */; };
+		9F238E9427DF679F00639369 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E9327DF679F00639369 /* ImageLoader.swift */; };
+		9F238E9627DF67D300639369 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E9527DF67D300639369 /* ImageCache.swift */; };
+		9F238E9827DF685500639369 /* CakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E9727DF685500639369 /* CakeTableViewCell.swift */; };
+		9F238E9B27DF68B300639369 /* CakeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E9A27DF68B300639369 /* CakeListViewModel.swift */; };
+		9F238E9D27DF695B00639369 /* CakeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238E9C27DF695B00639369 /* CakeListViewController.swift */; };
+		9F238EA127DF6AA600639369 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EA027DF6AA600639369 /* MainCoordinator.swift */; };
+		9F238EA327DF6BAF00639369 /* CakeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EA227DF6BAF00639369 /* CakeDetailsViewController.swift */; };
+		9F238EA527DF6C0D00639369 /* CakeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F238EA427DF6C0D00639369 /* CakeDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F238E5B27DF51EF00639369 /* CakeItApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeItApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F238E5E27DF51EF00639369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F238E6027DF51EF00639369 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F238E6227DF51EF00639369 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F238E6527DF51EF00639369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F238E6727DF51F000639369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F238E6A27DF51F000639369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +46,16 @@
 		9F238E8927DF605D00639369 /* JsonDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecodable.swift; sourceTree = "<group>"; };
 		9F238E8B27DF608800639369 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		9F238E8D27DF60BD00639369 /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
+		9F238E8F27DF66D400639369 /* ServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceImpl.swift; sourceTree = "<group>"; };
+		9F238E9127DF676900639369 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		9F238E9327DF679F00639369 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		9F238E9527DF67D300639369 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		9F238E9727DF685500639369 /* CakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTableViewCell.swift; sourceTree = "<group>"; };
+		9F238E9A27DF68B300639369 /* CakeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListViewModel.swift; sourceTree = "<group>"; };
+		9F238E9C27DF695B00639369 /* CakeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeListViewController.swift; sourceTree = "<group>"; };
+		9F238EA027DF6AA600639369 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		9F238EA227DF6BAF00639369 /* CakeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailsViewController.swift; sourceTree = "<group>"; };
+		9F238EA427DF6C0D00639369 /* CakeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +88,14 @@
 		9F238E5D27DF51EF00639369 /* CakeItApp */ = {
 			isa = PBXGroup;
 			children = (
+				9F238E9F27DF6A8300639369 /* Coordinator */,
+				9F238E9927DF689400639369 /* ViewModel */,
+				9F238E7827DF5B8F00639369 /* Model */,
+				9F238E7B27DF5CF000639369 /* View */,
 				9F238E8427DF5FB300639369 /* Networking */,
 				9F238E8127DF5E1300639369 /* Uitility */,
-				9F238E7827DF5B8F00639369 /* Model */,
 				9F238E5E27DF51EF00639369 /* AppDelegate.swift */,
 				9F238E6027DF51EF00639369 /* SceneDelegate.swift */,
-				9F238E6227DF51EF00639369 /* ViewController.swift */,
-				9F238E7B27DF5CF000639369 /* View */,
 				9F238E6727DF51F000639369 /* Assets.xcassets */,
 				9F238E6927DF51F000639369 /* LaunchScreen.storyboard */,
 				9F238E6C27DF51F000639369 /* Info.plist */,
@@ -96,6 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				9F238E6427DF51EF00639369 /* Main.storyboard */,
+				9F238E9727DF685500639369 /* CakeTableViewCell.swift */,
+				9F238E9C27DF695B00639369 /* CakeListViewController.swift */,
+				9F238EA227DF6BAF00639369 /* CakeDetailsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,8 +138,29 @@
 				9F238E8927DF605D00639369 /* JsonDecodable.swift */,
 				9F238E8B27DF608800639369 /* ServiceError.swift */,
 				9F238E8D27DF60BD00639369 /* ServiceClient.swift */,
+				9F238E8F27DF66D400639369 /* ServiceImpl.swift */,
+				9F238E9127DF676900639369 /* URLRequest+Extension.swift */,
+				9F238E9327DF679F00639369 /* ImageLoader.swift */,
+				9F238E9527DF67D300639369 /* ImageCache.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		9F238E9927DF689400639369 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F238E9A27DF68B300639369 /* CakeListViewModel.swift */,
+				9F238EA427DF6C0D00639369 /* CakeDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F238E9F27DF6A8300639369 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9F238EA027DF6AA600639369 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +235,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F238E8E27DF60BD00639369 /* ServiceClient.swift in Sources */,
-				9F238E6327DF51EF00639369 /* ViewController.swift in Sources */,
+				9F238E9D27DF695B00639369 /* CakeListViewController.swift in Sources */,
+				9F238E9827DF685500639369 /* CakeTableViewCell.swift in Sources */,
+				9F238E9227DF676900639369 /* URLRequest+Extension.swift in Sources */,
+				9F238E9027DF66D400639369 /* ServiceImpl.swift in Sources */,
+				9F238EA327DF6BAF00639369 /* CakeDetailsViewController.swift in Sources */,
 				9F238E8827DF603400639369 /* Service.swift in Sources */,
+				9F238EA527DF6C0D00639369 /* CakeDetailsViewModel.swift in Sources */,
+				9F238EA127DF6AA600639369 /* MainCoordinator.swift in Sources */,
 				9F238E7A27DF5BA600639369 /* Cake.swift in Sources */,
 				9F238E8A27DF605D00639369 /* JsonDecodable.swift in Sources */,
 				9F238E5F27DF51EF00639369 /* AppDelegate.swift in Sources */,
@@ -201,6 +250,9 @@
 				9F238E8C27DF608800639369 /* ServiceError.swift in Sources */,
 				9F238E8627DF5FDC00639369 /* EndPoints.swift in Sources */,
 				9F238E6127DF51EF00639369 /* SceneDelegate.swift in Sources */,
+				9F238E9627DF67D300639369 /* ImageCache.swift in Sources */,
+				9F238E9B27DF68B300639369 /* CakeListViewModel.swift in Sources */,
+				9F238E9427DF679F00639369 /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
