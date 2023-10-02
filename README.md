@@ -1,6 +1,7 @@
 # CakeItApp
 * A cake app for user to find options for different Cakes 
 * If user select a cake it will open up with details of the cake
+* Used the UIKit framework
 
 # Tech stack
 * Developed the app using MVVM architecture
